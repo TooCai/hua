@@ -1,0 +1,385 @@
+body,ul,li,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-size:12px;
+}
+a{
+	text-decoration:none;
+	color:#6C6C6C;
+}
+i{
+	font-style:normal;
+}
+a:hover{
+	color:#f22e00;
+}
+ul,li{
+	list-style:none;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+.text-red{
+	color:red;
+}
+.text-red1{
+	color:#fc4200;
+}
+.text-green1{
+	color:#9fb838;
+}
+.text-pink1{
+	color:#d75696;
+}
+.text-blue1{
+	color:#2e9fdb;
+}
+
+header{
+	padding:0 100px 0 100px;
+	background-color: #f5f5f5;
+}
+header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.nav-menu>.nav-menu-item{
+	float: left;
+}
+.nav-menu>.nav-menu-item>a{
+	display: inline-block;
+	padding:0 8px 0 8px;
+	height:36px;
+	line-height: 36px;
+}
+
+.nav-list>.nav-list-item{
+	float:left;
+	position: relative;
+}
+.nav-list>.nav-list-item:hover{
+	background-color: #fff;
+}
+.nav-list>.nav-list-item:hover>a{
+	border-color:#ddd;
+}
+.nav-list>.nav-list-item>a{
+	display: inline-block;
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	padding:0 5px 0 5px;
+	height:36px;
+	line-height: 36px;
+}
+.nav-list>.nav-list-item:hover>.nav-list-child{
+	display: block;
+	border-color:#ddd;
+	background-color: #fff;
+}
+.nav-list-child{
+	padding:0 6px 0 6px;
+	position: absolute;
+	display: none;
+	border: 1px solid transparent;
+	border-top:none;
+}
+.nav-list-child>.nav-list-child-item>a{
+	height:24px;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.nav-list-childs{
+	display: none;
+	position: absolute;
+	right:0;
+	width:1205px;
+	border:1px solid #ddd;
+	border-top:none;
+}
+.nav-list-childs:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.nav-list-childs>.childs-item{
+	float:left;
+	border-right:1px solid #ddd;
+	padding:10px 0;
+}
+.nav-list-childs>.childs-item:nth-child(1){
+	width:320px;
+}
+.nav-list-childs>.childs-item:nth-child(2){
+	width:240px;
+}
+.nav-list-childs>.childs-item:nth-child(3){
+	width:240px;
+}
+.nav-list-childs>.childs-item:nth-child(4){
+	width:160px;
+	border-right:none;
+}
+.nav-list-childs>.childs-item:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.nav-list>.nav-list-item:hover>.nav-list-childs{
+	display: block;
+	background-color: #fff;
+}
+.nav-list-childs>.childs-item>h3{
+	font-size:18px;
+	padding-left:5px;
+}
+
+.childs-item-list:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.childs-item-list>li{
+	float:left;
+	width:80px;
+}
+.childs-item-list>li>a{
+	display: inline-block;
+	padding:0 10px 0 10px;
+	height:24px;
+	line-height: 24px;
+}
+.childs-item-list>li>a:hover{
+	background-color:#fc4200;
+	color:#fff;
+	border-radius:3px;
+}
+
+
+div.top{
+	padding:10px 100px 10px 100px;
+}
+.top>.logo{
+	padding:20px;
+}
+.top>.logo>.log-img{
+	display: inline-block;
+	width:200px;
+	padding-top:10px;
+}
+
+.form>.form-title>li{
+	float: left;
+}
+.form>.form-title>li:hover{
+	background-color: #f9e6e6;
+}
+.form>.form-title>li.active{
+	background-color: #FF5400;
+}
+.form>.form-title>li.active>a{
+	color:#fff;
+	font-weight: bold;
+}
+.form>.form-title>li>a{
+	display: inline-block;
+	width:45px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+}
+.form>.form-search{
+	/*为了解决行内元素之间距离*/
+	font-size: 0;
+}
+.form>.form-search>input[type="text"]{
+	outline: none;
+	display: inline-block;
+	width:500px;
+	height:40px;
+	line-height: 40px;
+	border:2px solid #FF5400;
+	padding:0 10px 0 10px;
+	font-size:20px;
+}
+.form>.form-search>input[type="button"]{
+	display: inline-block;
+	width:120px;
+	height:44px;
+	line-height: 44px;
+	vertical-align: top;
+	background-color: #FF5400;
+	border:none;
+	color:#fff;
+	font-size:18px;
+	cursor:pointer;
+}
+
+.form>.form-type:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.form>.form-type>li{
+	float: left;
+}
+.form>.form-type>li.form-right{
+	float: right;
+}
+.form>.form-type>li>a{
+	display: inline-block;
+	padding:5px;
+}
+
+
+.content{
+	position: relative;
+	padding:0 100px 0 100px;
+}
+.content>nav{
+	padding-left:210px;
+}
+.content>nav>.nav-list:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.content>nav>.nav-list>li{
+	float: left;
+}
+.content>nav>.nav-list>li.split-line{
+	font-size: 16px;
+	color:#bbb;
+}
+.content>nav>.nav-list>li>a{
+	display: inline-block;
+	padding:0 8px 0 8px;
+	font-size:16px;
+}
+
+.main>.service{
+	position: absolute;
+	top:0px;
+}
+.main>.service>.service-head>a{
+	font-size:16px;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+	color:#fff;
+	background-color: #FF6537;
+	width:200px;
+	/*缩进*/
+	text-indent:10px;
+	position: relative;
+}
+
+.main>.service>.service-body:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.main>.service>.service-body>.service-item{
+	background-color: #FF6537;
+	color:#fff;
+	padding-left:15px;
+	width:185px;
+}
+.main>.service>.service-body>.service-item:hover{
+	background-color: #f94a14;
+}
+
+.main>.service>.service-body>.service-item>a{
+	color:#fff;
+	font-size:14px;
+	height:30px;
+	line-height: 30px;
+}
+.main>.service>.service-body>.service-item>i{
+	display: inline-block;
+	padding-right:10px;
+	height:30px;
+	line-height: 30px;
+}
+
+.main>.service>.service-body>.service-item:hover .service-item-content{
+	display: block;
+	z-index: 10;
+}
+.main>.service>.service-body>.service-item>.service-item-content{
+	display: none;
+	position: absolute;
+	left:200px;
+	top:30px;
+	background-color:#fff;
+	width:800px;
+	height:476px;
+	border:2px solid #f94a14;
+	border-left:none;
+	color:#666;
+}
+
+.content>.core{
+	padding-left:200px;
+}
+.content>.core>.turn-container{
+	position:relative;
+	margin:10px 0 0 10px;
+	width: 790px;
+	overflow: hidden;
+}
+.turn-container>.turn{
+	width:4740px;
+	height: 340px;
+}
+.turn-container>.turn:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.turn-container>.turn>li{
+	float:left;
+}
+.turn-container>.turn>li>a{
+	display: inline-block;
+}
+.turn-container>.turn>li>a>img{
+	vertical-align: top;
+}
+.turn-container>.turn-nav{
+	position: absolute;
+	left:50%;
+	bottom: 0;
+	padding:6px 10px;
+	margin-bottom:10px;
+	/*使轮播图导航处在中间*/
+	margin-left:-49px;
+	background-color: hsla(0,0%,100%,.3);
+	border-radius:12px;
+}
+.turn-container>.turn-nav>li{
+	float:left;
+	width:12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-left:10px;
+	cursor: pointer;
+}
+.turn-container>.turn-nav>li.active{
+	background-color:#db192a;
+}
+.turn-container>.turn-nav>li:first-child{
+	margin-left:0;
+}
